@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 	fmt.Println("Initial Commit2")
-	fmt.Println("committed from ide7")
+	fmt.Println("committed from ide8")
 }
