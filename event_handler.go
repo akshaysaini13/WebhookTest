@@ -11,3 +11,7 @@ func main() {
 func a() {
 	fmt.Println("lttc - 2")
 }
+
+func b() {
+	fmt.Println("lttc - 3")
+}
