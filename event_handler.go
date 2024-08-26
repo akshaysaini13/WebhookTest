@@ -27,3 +27,7 @@ func c() {
 func ddd() {
 	fmt.Println("lttc - d")
 }
+
+func eee() {
+	fmt.Println("lttc - e")
+}
