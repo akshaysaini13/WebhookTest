@@ -20,6 +20,7 @@ func b() {
 }
 
 func c() {
+	fmt.Println("lttc - 3")
 	fmt.Println("lttc - c")
 }
 
