@@ -29,5 +29,8 @@ func ddd() {
 }
 
 func ff() {
-	fmt.Println("lttc - f")
+}
+
+func eee() {
+	fmt.Println("lttc - e")
 }
