@@ -40,3 +40,7 @@ func ff() {
 func eee() {
 	fmt.Println("lttc - e")
 }
+
+func gggg() {
+	fmt.Println("lttc - ggg")
+}
