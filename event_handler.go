@@ -44,3 +44,11 @@ func eee() {
 func gggg() {
 	fmt.Println("lttc - ggg")
 }
+
+func iii() {
+	fmt.Println("lttc - ii")
+}
+
+func jjj() {
+	fmt.Println("lttc - jjj")
+}
