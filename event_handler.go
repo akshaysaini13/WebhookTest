@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Initial Commit21")
+	fmt.Println("Initial Commit212")
 	fmt.Println("commit test")
 	fmt.Println("committed from ide2")
   	fmt.Println("initial commit 1")
