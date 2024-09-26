@@ -46,5 +46,5 @@ func gggg() {
 }
 
 func likk() {
-	fmt.Println("lttc - likk")
+	fmt.Println("lttc - likkk")
 }
