@@ -48,3 +48,8 @@ func gggg() {
 func likk() {
 	fmt.Println("lttc - likkk 23rr4255")
 }
+
+func likkk() {
+	fmt.Println("lttc - likkkkk new")
+}
+
