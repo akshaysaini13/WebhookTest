@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func a_test() {
+func TestA(t *testing.T) {
 	fmt.Println("lttc - 2")
 }
