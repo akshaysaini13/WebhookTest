@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("LTTC test")
 }
 
-func a() {
+func A() {
 	fmt.Println("lttc - 2")
 }
 
