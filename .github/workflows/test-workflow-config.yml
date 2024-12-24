@@ -2,7 +2,7 @@ name: go-test
 
 on:
   pull_request:
-    branches: [ 'main' ]
+    branches: [ '**' ]
   workflow_dispatch:
     branches: [ '**' ]
 
@@ -28,10 +28,10 @@ jobs:
       - name: Run tests
         run:  go test -v -coverprofile=coverage.out ./...
       
-      - name: find total test coverage 
+      - name: find total test coverage with go tool
         run:  go tool cover -func=coverage.out | grep total | awk '{print $3}' > coverage.txt
 
-      - name: Add Coverage PR Comment
+      - name: Add Coverage on PR
         uses: marocchino/sticky-pull-request-comment@v2
         if: github.event_name == 'pull_request'
         with:
