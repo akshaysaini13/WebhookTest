@@ -21,17 +21,26 @@ jobs:
           go-version: 1.18
 
       # Step 3: Run Tests and Generate Coverage
-      - name: Run Tests with Coverage
+      - name: Run Tests with go Coverage and go tool
         run: |
           mkdir -p coverage
           go test ./... -coverprofile=coverage/coverage.out
           go tool cover -func=coverage/coverage.out | grep total | awk '{print $3}' > coverage.txt
 
-      # Step 4: Post Sticky PR Comment
-      - name: Sticky Pull Request Comment with sticky request
+      # Step 4: Extract Coverage Percentage
+      - name: Extract Coverage
+        id: coverage
+        run: |
+          COVERAGE=$(cat coverage.txt)
+          echo "coverage=$COVERAGE" >> $GITHUB_ENV
+
+      # Step 5: Post Sticky PR Comment
+      - name: Sticky Pull Request Comment
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           recreate: true
-          path: coverage.txt
+          message: |
+            **Test Coverage Report**
+            Total Coverage: ${{ env.coverage }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

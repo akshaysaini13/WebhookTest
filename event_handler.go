@@ -12,20 +12,20 @@ func main() {
 	fmt.Println("LTTC test")
 }
 
-func a() {
+func A() {
 	fmt.Println("lttc - 2")
 }
 
-func b() {
+func B() {
 	fmt.Println("lttc - 3")
 }
 
-func c() {
+func C() {
 	fmt.Println("lttc - 3")
 	fmt.Println("lttc - c")
 }
 
-func ddd() {
+func DDD() {
 	fmt.Println("lttc - d")
 }
 

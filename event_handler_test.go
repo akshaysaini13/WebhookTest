@@ -5,6 +5,10 @@ import (
 	"testing"
 )
 
-func a_test(t *testing.T) {
+func Test_A(t *testing.T) {
 	fmt.Println("lttc - 2")
+}
+
+func Test_B(t *testing.T) {
+	fmt.Println("lttc - 3")
 }
