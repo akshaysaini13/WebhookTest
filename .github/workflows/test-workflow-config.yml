@@ -21,7 +21,7 @@ jobs:
           go-version: 1.18
 
       # Step 3: Run Tests and Generate Coverage
-      - name: Run Tests with Coverage
+      - name: Run Tests with go Coverage and go tool
         run: |
           mkdir -p coverage
           go test ./... -coverprofile=coverage/coverage.out
